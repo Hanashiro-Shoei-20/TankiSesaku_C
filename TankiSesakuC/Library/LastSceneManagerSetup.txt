@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Furugen.unity
+- path: Assets/Scenes/2DFurugen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
