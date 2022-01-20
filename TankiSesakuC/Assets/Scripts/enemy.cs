@@ -6,7 +6,8 @@ using UnityEngine;
 //5秒ごとに振り向く　振り向き継続は1秒　振り向き継続が終了したらまた5秒計測する
 public class enemy : MonoBehaviour
 {
-    public Material brown, red;
+    public Sprite bansyo, furimuki;
+    public SpriteRenderer spriteRenderer;
     float turnTime = 0;
     float spanTime = 0;
     int time = 1, flame = 0;
@@ -42,10 +43,10 @@ public class enemy : MonoBehaviour
         {
             yield return new WaitForSeconds(3);
             Turnflg = true;
-            GetComponent<Renderer>().material.color = red.color;
+            spriteRenderer.sprite = furimuki;
             yield return new WaitForSeconds(1);
             Turnflg = false;
-            GetComponent<Renderer>().material.color = brown.color;
+            spriteRenderer.sprite = bansyo;
         }
     }
 }
