@@ -770,8 +770,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff36b98c870f6fb428320523a617e46e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pausePanel: {fileID: 0}
-  resumeButton: {fileID: 0}
+  pausePanel: {fileID: 1153222136}
+  resumeButton: {fileID: 548560842}
 --- !u!1 &1573976193
 GameObject:
   m_ObjectHideFlags: 0

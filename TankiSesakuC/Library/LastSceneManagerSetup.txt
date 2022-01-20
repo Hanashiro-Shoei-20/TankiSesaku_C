@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Furugen/Pause.unity
-=======
-- path: Assets/Scenes/Game.unity
->>>>>>> 66bdf86e5df537cc2bf57dffd84b1553e883d2d0
   isLoaded: 1
   isActive: 1
   isSubScene: 0
