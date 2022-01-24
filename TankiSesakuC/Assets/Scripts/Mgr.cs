@@ -9,21 +9,22 @@ public class Mgr : MonoBehaviour
     public GameObject Player, Enemy, Pnel;
     public GameObject[] lifeIcon = new GameObject[3];
 
-    public static int life = 3;
+    public static int life;
 
     bool Deflg = false;
     player Ply;
     enemy Enem;
     bool pf, ef;
 
-    public static float SleepGauge = 0;
+    public static float SleepGauge;
 
     float MaxGauge = 200.0f;
     public Slider slider;
     // Start is called before the first frame update
     void Start()
     {
-
+        life = 3;
+        SleepGauge = 0;
     }
 
     // Update is called once per frame
