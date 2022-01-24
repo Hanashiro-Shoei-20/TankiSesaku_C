@@ -8,12 +8,16 @@ public class Mgr : MonoBehaviour
 {
     public GameObject Player, Enemy, Pnel;
     public GameObject[] lifeIcon = new GameObject[3];
-    int life = 3;
+
+    public static int life = 3;
+
     bool Deflg = false;
     player Ply;
     enemy Enem;
     bool pf, ef;
-    float SleepGauge = 0;
+
+    public static float SleepGauge = 0;
+
     float MaxGauge = 200.0f;
     public Slider slider;
     // Start is called before the first frame update
@@ -51,7 +55,7 @@ public class Mgr : MonoBehaviour
 
         if (pf == true && ef == false)
         {
-            SleepGauge += 0.1f;
+            SleepGauge += 0.2f;
         }
 
         slider.value = SleepGauge / MaxGauge;
@@ -69,5 +73,15 @@ public class Mgr : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+    }
+
+    public static int GetLife()
+    {
+        return life;
+    }
+
+    public static float GetGauge()
+    {
+        return SleepGauge;
     }
 }

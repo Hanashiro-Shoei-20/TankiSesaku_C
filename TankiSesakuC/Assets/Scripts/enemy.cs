@@ -6,7 +6,7 @@ using UnityEngine;
 //5秒ごとに振り向く　振り向き継続は1秒　振り向き継続が終了したらまた5秒計測する
 public class enemy : MonoBehaviour
 {
-    public Sprite bansyo, furimuki;
+    public Sprite bansyo, furimuki, tirami;
     public SpriteRenderer spriteRenderer;
     float turnTime = 0;
     float spanTime = 0;
