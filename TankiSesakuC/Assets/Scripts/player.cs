@@ -16,7 +16,7 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey("joystick button 0"))
         {
             Sleepflg = true;
             spriteRenderer.sprite = neteru;

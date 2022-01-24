@@ -36,7 +36,7 @@ public class Mgr : MonoBehaviour
         Enem = Enemy.GetComponent<enemy>();
         ef = Enem.Turnflg;
 
-        Debug.Log(life);
+        //Debug.Log(life);
 
         if (pf == true && ef == true)
         {
@@ -56,7 +56,7 @@ public class Mgr : MonoBehaviour
 
         if (pf == true && ef == false)
         {
-            SleepGauge += 0.2f;
+            SleepGauge += 0.03f;
         }
 
         slider.value = SleepGauge / MaxGauge;
