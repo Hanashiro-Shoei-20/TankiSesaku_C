@@ -51,7 +51,7 @@ public class Mgr : MonoBehaviour
 
         if (pf == true && ef == false)
         {
-            SleepGauge += 0.1f;
+            SleepGauge += 0.2f;
         }
 
         slider.value = SleepGauge / MaxGauge;

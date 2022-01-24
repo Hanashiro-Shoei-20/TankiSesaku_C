@@ -63,12 +63,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Retry.cs" />
     <Compile Include="Assets\Scenes\Furugen\GameManager.cs" />
     <Compile Include="Assets\Scenes\Furugen\Menu.cs" />
+    <Compile Include="Assets\Script\Fade.cs" />
+    <Compile Include="Assets\Script\Menusound.cs" />
+    <Compile Include="Assets\Script\SceneChange.cs" />
+    <Compile Include="Assets\Script\Select.cs" />
     <Compile Include="Assets\Script\Title.cs" />
     <Compile Include="Assets\Scripts\Mgr.cs" />
     <Compile Include="Assets\Scripts\enemy.cs" />
     <Compile Include="Assets\Scripts\player.cs" />
+    <Compile Include="Assets\StartGame.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/TankiSesaku_C/TankiSesakuC/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
