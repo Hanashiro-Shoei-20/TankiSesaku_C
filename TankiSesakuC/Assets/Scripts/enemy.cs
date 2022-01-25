@@ -47,7 +47,7 @@ public class enemy : MonoBehaviour
 
             if(Feint != 1)
             {
-                yield return new WaitForSeconds(0.28f);
+                yield return new WaitForSeconds(Random.Range(0.28f, 0.5f));
                 spriteRenderer.sprite = furimuki;
                 Turnflg = true;
             }           
