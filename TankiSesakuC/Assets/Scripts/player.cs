@@ -6,7 +6,10 @@ public class player : MonoBehaviour
 {
     public Sprite okiteru, neteru;
     public SpriteRenderer spriteRenderer;
+    public GameObject menu;
     public bool Sleepflg = false;
+    Menu men;
+    bool of = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,15 +19,21 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) || Input.GetKey("joystick button 0"))
+        men = menu.GetComponent<Menu>();
+        of = men.Opeflg;
+
+        if(of == true)
         {
-            Sleepflg = true;
-            spriteRenderer.sprite = neteru;
-        }
-        else
-        {
-            Sleepflg = false;
-            spriteRenderer.sprite = okiteru;
+            if (Input.GetKey(KeyCode.Space) || Input.GetKey("joystick button 0"))
+            {
+                Sleepflg = true;
+                spriteRenderer.sprite = neteru;
+            }
+            else
+            {
+                Sleepflg = false;
+                spriteRenderer.sprite = okiteru;
+            }
         }
     }
 }

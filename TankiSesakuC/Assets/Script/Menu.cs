@@ -11,6 +11,7 @@ public class Menu : MonoBehaviour
     [SerializeField] private Button resumeButton;
     [SerializeField] private GameObject button1,button2,button3;
     int startflag = 0;
+    public bool Opeflg;
 
     //public Button FirstSelectButton;
     Button Restart;
@@ -27,6 +28,7 @@ public class Menu : MonoBehaviour
         button1.SetActive(false);
         button2.SetActive(false);
         button3.SetActive(false);
+        Opeflg = true;
 
         //pauseButton.onClick.AddListener(Pause);
         //resumeButton.onClick.AddListener(Resume);
@@ -46,6 +48,7 @@ public class Menu : MonoBehaviour
             button1.SetActive(true);
             button2.SetActive(true);
             button3.SetActive(true);
+            Opeflg = false;
             Restart.Select();
             startflag = 1;
 
@@ -60,6 +63,7 @@ public class Menu : MonoBehaviour
             button1.SetActive(false);
             button2.SetActive(false);
             button3.SetActive(false);
+            Opeflg = true;
             EventSystem.current.SetSelectedGameObject(null);
             startflag = 0;
 

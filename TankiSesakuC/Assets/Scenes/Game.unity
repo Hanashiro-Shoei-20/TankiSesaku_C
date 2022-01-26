@@ -883,6 +883,7 @@ MonoBehaviour:
   button1: {fileID: 1299240010}
   button2: {fileID: 890581820}
   button3: {fileID: 1330364426}
+  Opeflg: 0
 --- !u!114 &696695495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1973,6 +1974,7 @@ MonoBehaviour:
   okiteru: {fileID: 21300000, guid: b9b28d1b174ac6d44afa2d9cf950a5f4, type: 3}
   neteru: {fileID: 21300000, guid: 5a08dce3e54df2044ae0ccb74fe1212f, type: 3}
   spriteRenderer: {fileID: 1880276669}
+  menu: {fileID: 696695493}
   Sleepflg: 0
 --- !u!212 &1880276669
 SpriteRenderer:
