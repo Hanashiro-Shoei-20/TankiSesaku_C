@@ -22,6 +22,7 @@ public class Menu : MonoBehaviour
         Restart = GameObject.Find("/Menu/exit").GetComponent<Button>();
         Title = GameObject.Find("/Menu/title").GetComponent<Button>();
         Exit = GameObject.Find("/Menu/Restart").GetComponent<Button>();
+
         pausePanel.SetActive(false);
         button1.SetActive(false);
         button2.SetActive(false);
