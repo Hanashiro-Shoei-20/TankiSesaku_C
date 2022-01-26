@@ -9,6 +9,7 @@ public class Menu : MonoBehaviour
     //[SerializeField] private Button pauseButton;
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private Button resumeButton;
+    [SerializeField] private GameObject button1,button2,button3;
     int startflag = 0;
 
     //public Button FirstSelectButton;
@@ -18,10 +19,13 @@ public class Menu : MonoBehaviour
 
     void Awake()
     {
-        Restart = GameObject.Find("/Menu/Button").GetComponent<Button>();
-        Title = GameObject.Find("/Menu/Button1").GetComponent<Button>();
-        Exit = GameObject.Find("/Menu/Button2").GetComponent<Button>();
+        Restart = GameObject.Find("/Menu/exit").GetComponent<Button>();
+        Title = GameObject.Find("/Menu/title").GetComponent<Button>();
+        Exit = GameObject.Find("/Menu/Restart").GetComponent<Button>();
         pausePanel.SetActive(false);
+        button1.SetActive(false);
+        button2.SetActive(false);
+        button3.SetActive(false);
 
         //pauseButton.onClick.AddListener(Pause);
         //resumeButton.onClick.AddListener(Resume);
@@ -38,6 +42,9 @@ public class Menu : MonoBehaviour
 
             Time.timeScale = 0f;//時間停止
             pausePanel.SetActive(true);
+            button1.SetActive(true);
+            button2.SetActive(true);
+            button3.SetActive(true);
             Restart.Select();
             startflag = 1;
 
@@ -49,7 +56,9 @@ public class Menu : MonoBehaviour
         {
             Time.timeScale = 1f;//戻る
             pausePanel.SetActive(false);
-
+            button1.SetActive(false);
+            button2.SetActive(false);
+            button3.SetActive(false);
             EventSystem.current.SetSelectedGameObject(null);
             startflag = 0;
 
