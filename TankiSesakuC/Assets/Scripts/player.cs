@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
-    public Material green, blue;
+    public Sprite okiteru, neteru;
+    public SpriteRenderer spriteRenderer;
     public bool Sleepflg = false;
     // Start is called before the first frame update
     void Start()
@@ -15,15 +16,15 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey("joystick button 0"))
         {
-            GetComponent<Renderer>().material.color = blue.color;
             Sleepflg = true;
+            spriteRenderer.sprite = neteru;
         }
         else
         {
-            GetComponent<Renderer>().material.color = green.color;
             Sleepflg = false;
+            spriteRenderer.sprite = okiteru;
         }
     }
 }
