@@ -10,7 +10,7 @@ public class enemy : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     float turnTime = 0;
     float spanTime = 0;
-    int time = 1, flame = 0;
+    int time = 1, flame = 0, Feint = 0;
     public bool Turnflg = false;
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class enemy : MonoBehaviour
 
         Turn();
 
-
+        Debug.Log(Feint);
 
         //時間計測
         flame++;
@@ -41,9 +41,17 @@ public class enemy : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(3);
-            Turnflg = true;
-            spriteRenderer.sprite = furimuki;
+            yield return new WaitForSeconds(Random.Range(1,8));
+            spriteRenderer.sprite = tirami;
+            Feint = Random.Range(1, 10);
+
+            if(Feint != 1)
+            {
+                yield return new WaitForSeconds(Random.Range(0.28f, 0.5f));
+                spriteRenderer.sprite = furimuki;
+                Turnflg = true;
+            }           
+
             yield return new WaitForSeconds(1);
             Turnflg = false;
             spriteRenderer.sprite = bansyo;
