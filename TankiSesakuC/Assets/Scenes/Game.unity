@@ -883,6 +883,7 @@ MonoBehaviour:
   button1: {fileID: 1299240010}
   button2: {fileID: 890581820}
   button3: {fileID: 1330364426}
+  enem: {fileID: 1900887976}
   Opeflg: 0
 --- !u!114 &696695495
 MonoBehaviour:
