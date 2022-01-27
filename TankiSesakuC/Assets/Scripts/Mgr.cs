@@ -85,7 +85,7 @@ public class Mgr : MonoBehaviour
 
         if(CountDown <= 0)
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("nakama2");
         }
 
     }

@@ -30,7 +30,6 @@ public class Retry1 : MonoBehaviour
 
         bool start = true/*Input.GetButtonDown("Pause")*/;
 
-
         if (start == true && startflag == 0)
         {
 

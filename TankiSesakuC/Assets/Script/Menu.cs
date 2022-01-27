@@ -10,6 +10,10 @@ public class Menu : MonoBehaviour
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private Button resumeButton;
     [SerializeField] private GameObject button1,button2,button3;
+
+    public GameObject enem;
+    AudioSource audioSource;
+
     int startflag = 0;
     public bool Opeflg;
 
@@ -33,6 +37,8 @@ public class Menu : MonoBehaviour
         //pauseButton.onClick.AddListener(Pause);
         //resumeButton.onClick.AddListener(Resume);
 
+        audioSource = enem.GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -44,6 +50,9 @@ public class Menu : MonoBehaviour
         {
 
             Time.timeScale = 0f;//時間停止
+
+            audioSource.enabled = false;
+
             pausePanel.SetActive(true);
             button1.SetActive(true);
             button2.SetActive(true);
@@ -59,6 +68,9 @@ public class Menu : MonoBehaviour
         else if (start == true && startflag == 1)
         {
             Time.timeScale = 1f;//戻る
+
+            audioSource.enabled = true;
+
             pausePanel.SetActive(false);
             button1.SetActive(false);
             button2.SetActive(false);
