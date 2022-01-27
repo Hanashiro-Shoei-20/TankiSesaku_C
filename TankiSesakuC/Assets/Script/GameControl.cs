@@ -10,8 +10,11 @@ public class GameControl : MonoBehaviour
     private GameObject lpanel;
 
     public int flag = 0;
-    int rlife = Mgr.GetLife();
-    float rgauge = Mgr.GetGauge();
+    //int rlife = Mgr.GetLife();
+    //float rgauge = Mgr.GetGauge();
+
+    int rlife;
+    float rgauge;
 
     void Start()
     {
@@ -21,8 +24,11 @@ public class GameControl : MonoBehaviour
         wpanel.gameObject.SetActive(false);
         lpanel = GameObject.Find("Lose");
         lpanel.gameObject.SetActive(false);
-        rlife = 3;
-        rgauge = 150;
+        rlife = 0;
+        rgauge = 200;
+
+        rlife = Mgr.GetLife();
+        rgauge = Mgr.GetGauge();
     }
 
     // Update is called once per frame
@@ -30,7 +36,7 @@ public class GameControl : MonoBehaviour
     {
         if (rlife >= 1)
         {
-            if (Input.GetButtonDown("Retry") && flag == 0)
+            if (/*Input.GetButtonDown("Retry") && */flag == 0)
             {
                 if (rgauge >= 200)
                 {
@@ -45,6 +51,20 @@ public class GameControl : MonoBehaviour
             else if (Input.GetButtonDown("Retry") && flag == 1)
             {
                 wpanel.gameObject.SetActive(false);
+                lpanel.gameObject.SetActive(false);
+                rpanel.gameObject.SetActive(true);
+                flag = 2;
+            }
+        }
+        if (rlife == 0)
+        {
+            if (/*Input.GetButtonDown("Retry") && */flag == 0)
+            {
+                lpanel.gameObject.SetActive(true);
+                flag = 1;
+            }
+            else if (Input.GetButtonDown("Retry") && flag == 1)
+            {
                 lpanel.gameObject.SetActive(false);
                 rpanel.gameObject.SetActive(true);
                 flag = 2;
