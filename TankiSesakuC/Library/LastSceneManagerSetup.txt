@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/nakama2.unity
+=======
+- path: Assets/Scenes/Game.unity
+>>>>>>> 673cc2c7cd779f4ee5b217d2c65e75d6ec13eb21
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -71,12 +71,12 @@ public class Mgr : MonoBehaviour
 
             SleepGauge = MaxGauge;
 
-            SceneManager.LoadScene("Clear");
+            SceneManager.LoadScene("nakama2");
         }
 
         if (life <= 0)
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("nakama2");
         }
 
         CountDown -= Time.deltaTime;
