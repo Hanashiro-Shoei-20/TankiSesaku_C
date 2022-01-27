@@ -8,10 +8,17 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Game");
 
         Time.timeScale = 1f;//戻る
         Debug.Log("Restart");
+    }
+
+    public void Title()
+    {
+        SceneManager.LoadScene("Start");
+        Time.timeScale = 1f;//戻る
     }
 
     public void Exit()

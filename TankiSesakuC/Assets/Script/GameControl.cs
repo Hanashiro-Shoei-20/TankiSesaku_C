@@ -36,7 +36,7 @@ public class GameControl : MonoBehaviour
     {
         if (rlife >= 1)
         {
-            if (/*Input.GetButtonDown("Retry") && */flag == 0)
+            if (/*Input.GetButtonDown("Retry") &&*/ flag == 0)
             {
                 if (rgauge >= 200)
                 {
@@ -58,7 +58,7 @@ public class GameControl : MonoBehaviour
         }
         if (rlife == 0)
         {
-            if (/*Input.GetButtonDown("Retry") && */flag == 0)
+            if (/*Input.GetButtonDown("Retry") &&*/ flag == 0)
             {
                 lpanel.gameObject.SetActive(true);
                 flag = 1;
