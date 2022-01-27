@@ -10,11 +10,13 @@ public class enemy : MonoBehaviour
     AudioSource audioSource;
     public Sprite bansyo, furimuki, tirami;
     public SpriteRenderer spriteRenderer;
+    public GameObject menu;
     float turnTime = 0;
     float spanTime = 0;
     int time = 1, flame = 0, Feint = 0;
     public bool Turnflg = false;
-    
+    Menu mem;
+    bool SF = true;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,14 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        mem = menu.GetComponent<Menu>();
+        SF = mem.Opeflg;
+
+        //if(SF == false)
+        //{
+        //    audioSource.Stop();
+        //}
 
         Turn();
 
