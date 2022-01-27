@@ -18,6 +18,8 @@ public class enemy : MonoBehaviour
     Menu mem;
     bool SF = true;
 
+    bool BansyoSound = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +34,7 @@ public class enemy : MonoBehaviour
         mem = menu.GetComponent<Menu>();
         SF = mem.Opeflg;
 
-        //if(SF == false)
+        //if (SF == false)
         //{
         //    audioSource.Stop();
         //}
@@ -70,7 +72,7 @@ public class enemy : MonoBehaviour
             yield return new WaitForSeconds(1);
             Turnflg = false;
             spriteRenderer.sprite = bansyo;
-            audioSource.Play();
+            audioSource.Play();           
         }
     }
 }
