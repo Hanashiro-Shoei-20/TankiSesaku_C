@@ -27,12 +27,8 @@ public class Retry1 : MonoBehaviour
 
     void Update()
     {
-<<<<<<< HEAD
-        bool start = ;
 
-=======
         bool start = true/*Input.GetButtonDown("Pause")*/;
->>>>>>> a833072793ca07a5b667b54893b6ae580a51cef6
 
         if (start == true && startflag == 0)
         {

@@ -44,10 +44,10 @@ public class Title : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetMouseButtonDown(0) || Input.GetKeyDown("space") || Input.GetKey("joystick button 0")) //マウス左クリック、スペースキー、Aボタンを押した場合
-		{
-			SceneManager.LoadScene("Game");//Gameシーンをロードする
-		}
+        //if (Input.GetMouseButtonDown(0) || Input.GetKeyDown("space") || Input.GetKey("joystick button 0")) //マウス左クリック、スペースキー、Aボタンを押した場合
+        //{
+        //    SceneManager.LoadScene("Game");//Gameシーンをロードする
+        //}
 
-	}
+    }
 }
