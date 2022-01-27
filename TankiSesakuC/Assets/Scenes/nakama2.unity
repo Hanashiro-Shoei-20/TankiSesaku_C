@@ -1448,8 +1448,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1876808150}
-        m_MethodName: 
+      - m_Target: {fileID: 1876808153}
+        m_MethodName: Title
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1609,7 +1609,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 1750167461}
   resumeButton: {fileID: 828796117}
-  Opeflg: 0
 --- !u!1 &1300886099
 GameObject:
   m_ObjectHideFlags: 0
