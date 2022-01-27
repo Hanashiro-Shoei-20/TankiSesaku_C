@@ -69,6 +69,7 @@
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Menu.cs" />
     <Compile Include="Assets\Script\Menusound.cs" />
+    <Compile Include="Assets\Script\Retry1.cs" />
     <Compile Include="Assets\Script\SceneChange.cs" />
     <Compile Include="Assets\Script\Select.cs" />
     <Compile Include="Assets\Script\Title.cs" />
