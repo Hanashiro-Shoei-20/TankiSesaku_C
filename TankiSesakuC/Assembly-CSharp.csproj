@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Back.cs" />
     <Compile Include="Assets\Retry.cs" />
     <Compile Include="Assets\Script\Fade.cs" />
     <Compile Include="Assets\Script\GameControl.cs" />

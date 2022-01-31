@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/nakama2.unity
     guid: 02761747f93cf514da7335f65c65643a
+  - enabled: 1
+    path: Assets/Scenes/Help.unity
+    guid: d42584707943ae04b905018676c81757
   m_configObjects: {}
