@@ -1204,8 +1204,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 54.5, y: -51.89}
-  m_SizeDelta: {x: 33.700012, y: 41.390015}
+  m_AnchoredPosition: {x: 61.1, y: -48.92}
+  m_SizeDelta: {x: 53.46, y: 60.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244590242
 MonoBehaviour:
@@ -1220,13 +1220,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.956861, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 5db29273a56a5c540a2f9a32d4a5e498, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1578,8 +1578,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 161.5, y: -51.89}
-  m_SizeDelta: {x: 33.700012, y: 41.390015}
+  m_AnchoredPosition: {x: 167.23999, y: -48.92}
+  m_SizeDelta: {x: 43.95, y: 60.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1342525164
 MonoBehaviour:
@@ -1594,13 +1594,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.956861, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 5db29273a56a5c540a2f9a32d4a5e498, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1801,8 +1801,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 106.5, y: -51.89}
-  m_SizeDelta: {x: 33.700012, y: 41.390015}
+  m_AnchoredPosition: {x: 116.31, y: -48.92}
+  m_SizeDelta: {x: 46.87, y: 60.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1780977847
 MonoBehaviour:
@@ -1817,13 +1817,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.956861, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 5db29273a56a5c540a2f9a32d4a5e498, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1972,8 +1972,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cba86aa0fe0aa347b592caa4e1ee0ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  okiteru: {fileID: 21300000, guid: b9b28d1b174ac6d44afa2d9cf950a5f4, type: 3}
-  neteru: {fileID: 21300000, guid: 5a08dce3e54df2044ae0ccb74fe1212f, type: 3}
+  okiteru: {fileID: 21300000, guid: 34adc09e8abaca44e904b3d1502f9b7b, type: 3}
+  neteru: {fileID: 21300000, guid: 1bbe65a4d04e01943978b6f2808be947, type: 3}
   spriteRenderer: {fileID: 1880276669}
   menu: {fileID: 696695493}
   Sleepflg: 0
@@ -2016,7 +2016,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9b28d1b174ac6d44afa2d9cf950a5f4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34adc09e8abaca44e904b3d1502f9b7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2145,9 +2145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a098cbc04f92354ea1ceb98a296bcf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bansyo: {fileID: 21300000, guid: f80b6d6d568b4bc4686371da35119c4a, type: 3}
-  furimuki: {fileID: 21300000, guid: 41ae4f7cadd7366469107f34388f1673, type: 3}
-  tirami: {fileID: 21300000, guid: 07023ac7da91151409f7ff8d836f68c3, type: 3}
+  bansyo: {fileID: 21300000, guid: c0aa8cf9850c34441b17eb1427352a74, type: 3}
+  furimuki: {fileID: 21300000, guid: 5ecc2a73e94e1ac4ca9ac6ef948c74e8, type: 3}
+  tirami: {fileID: 21300000, guid: 58da6fbbb3950dc42bf4956bfb382f98, type: 3}
   spriteRenderer: {fileID: 1900887978}
   menu: {fileID: 696695493}
   Turnflg: 0
@@ -2190,7 +2190,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f80b6d6d568b4bc4686371da35119c4a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0aa8cf9850c34441b17eb1427352a74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

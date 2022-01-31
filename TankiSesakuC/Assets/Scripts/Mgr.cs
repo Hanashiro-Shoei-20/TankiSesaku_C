@@ -28,7 +28,7 @@ public class Mgr : MonoBehaviour
     {
         life = 3;
         SleepGauge = 0;
-        CountDown = 40.0f;
+        CountDown = 60.0f;
     }
 
     // Update is called once per frame
@@ -60,7 +60,7 @@ public class Mgr : MonoBehaviour
 
         if (pf == true && ef == false)
         {
-            SleepGauge += 0.03f;
+            SleepGauge += 0.1f;
         }
 
         slider.value = SleepGauge / MaxGauge;
